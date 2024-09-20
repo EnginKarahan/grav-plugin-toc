@@ -65,7 +65,7 @@ class Toc
                 }
 
                 // Ignore headings in code, pre or blockquote environments
-                if (!$text || $tag{0} !== 'h') {
+                if (!$text || $tag[0] !== 'h') {
                     continue;
                 }
 
