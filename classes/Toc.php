@@ -126,7 +126,7 @@ class Toc
                 $text = trim($match['text']);
 
                 // Don't consider headings in code or pre environments
-                if (($tag{0} !== 'h') || (mb_strlen($text) == 0)) {
+                if (($tag[0] !== 'h') || (mb_strlen($text) == 0)) {
                     // Ignore empty headers, too
                     return $match[0];
                 }
